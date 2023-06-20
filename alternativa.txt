@@ -1,0 +1,28 @@
+Opción instalar cowrie sin Docker
+
+1-apt update
+
+2-apt-get install git python-virtualenv libssl-dev libffi-dev build-essential libpython-dev python2.7-minimal authbind
+
+Descargar carpeta cowrie:
+3-git clone http://github.com/micheloosterhof/cowrie
+
+4-cd cowrie
+
+Creamos entorno virtual donde descargar todas las dependencias
+5-virtualenv cowrie-env
+
+6-source cowrie-env/bin/activate
+
+7-pip install --upgrade pip
+
+8-pip install --upgrade -r requirements.txt
+
+Duplicamos el config para tener un backup de la configuración 
+9-cp cowrie.cfg.dist cowrie.cfg
+
+Iniciamos cowrie
+10-bin/cowrie start
+
+
+Link: https://hackertarget.com/cowrie-honeypot-ubuntu/

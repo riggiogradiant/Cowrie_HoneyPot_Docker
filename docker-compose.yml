@@ -1,0 +1,14 @@
+version: '3'
+services:
+  cowrie:
+    build:
+      context: .
+      dockerfile: Dockerfile
+    restart: always
+    ports:
+      - "2222:2222"  # Puerto 2222 local a 2222 contenedor
+      - "2223:2223"  # Puerto 2223 local a 2223 contenedor
+    volumes:
+      # - ./var:/cowrie/cowrie-git/var
+      # - ./etc:/cowrie/cowrie-git/etc
+      - ./cowrie:/cowrie/cowrie-git/cowrie
