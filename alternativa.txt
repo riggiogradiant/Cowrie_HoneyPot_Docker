@@ -25,4 +25,6 @@ Iniciamos cowrie
 10-bin/cowrie start
 
 
-Link: https://hackertarget.com/cowrie-honeypot-ubuntu/
+Link1: https://hackertarget.com/cowrie-honeypot-ubuntu/
+
+Link2: https://www.ezeelogin.com/kb/article/install-and-setup-cowrie-honeypot-on-ubuntu-545.html
